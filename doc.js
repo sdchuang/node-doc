@@ -62,6 +62,12 @@ path.parse(pathString)
 // 从对象中返回路径字符串，和 path.parse 相反。
 path.format({root,base,dir,name,ext})
 
+/**
+ * http
+ */
+// url
+
+// querystring
 
 
 
