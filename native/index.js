@@ -11,6 +11,8 @@ var dealZlib = require('./utils/net/zlib')
 var dealSoket = require('./utils/net/websoket')
 // 
 var dealProcess = require('./utils/process/process')
+// 
+var eventLoop = require('./utils/eventLoop')
 
 
 var methods = require('./utils/methods')
@@ -20,7 +22,8 @@ const port = 3000;
 
 // console.log(http)
 const server = http.createServer((request,response) => {
-  // methods(request,response);
+  console.log(response.writeJson({code:0}))
+  methods(request,response);
 
   // response.write('content:')
   // response.end('hello nodejs')
@@ -40,7 +43,9 @@ server.listen(port,() => {
   // dealUrl()
   // dealZlib()
 
-  dealProcess()
+  // dealProcess()
+
+  eventLoop()
   console.log(`running on ${port}...`)
 })
 

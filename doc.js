@@ -150,6 +150,7 @@ ws.onopen/onmessage/onclose/onerror
 // process
 // process.memoryUsage()  查看内存使用信息
 // process.platform()  系统平台
+// process.nextTick()
 // process.chdir() chdir方法用于修改Node.js应用程序中使用的当前工作目录
 // process.cwd() 进程当前工作目录
 // process.kill(pid) 杀死进程
@@ -166,6 +167,18 @@ process.on('eventName', () => {})//来监听事件。
 // 同步方式：spawnSync、execSync、execFileSync
 // 监听
 // close、exit、error、message
+
+
+/**
+ * event loop
+ * https://juejin.im/post/5ab09f0f518825557e783764#heading-2
+ */
+// timers: 这个阶段执行定时器队列中的回调如 setTimeout() 和 setInterval()。
+// I/O callbacks: 这个阶段执行几乎所有的回调。但是不包括close事件，定时器和setImmediate()的回调。
+// idle, prepare: 这个阶段仅在内部使用，可以不必理会。
+// poll: 等待新的I/O事件，node在一些特殊情况下会阻塞在这里。
+// check: setImmediate()的回调会在这个阶段执行。
+// close callbacks: 例如socket.on('close', ...)这种close事件的回调。
 
 
 
