@@ -172,6 +172,7 @@ process.on('eventName', () => {})//来监听事件。
 /**
  * event loop
  * https://juejin.im/post/5ab09f0f518825557e783764#heading-2
+ * https://www.cnblogs.com/yzfdjzwl/p/8182749.html
  */
 // timers: 这个阶段执行定时器队列中的回调如 setTimeout() 和 setInterval()。
 // I/O callbacks: 这个阶段执行几乎所有的回调。但是不包括close事件，定时器和setImmediate()的回调。
@@ -179,6 +180,9 @@ process.on('eventName', () => {})//来监听事件。
 // poll: 等待新的I/O事件，node在一些特殊情况下会阻塞在这里。
 // check: setImmediate()的回调会在这个阶段执行。
 // close callbacks: 例如socket.on('close', ...)这种close事件的回调。
+
+
+
 
 
 
