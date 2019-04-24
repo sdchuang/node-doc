@@ -7,6 +7,10 @@ var dealBuffer = require('./utils/flie/buffer')
 var dealStream = require('./utils/flie/stream')
 // 
 var dealUrl = require('./utils/net/url')
+var dealZlib = require('./utils/net/zlib')
+var dealSoket = require('./utils/net/websoket')
+// 
+var dealProcess = require('./utils/process/process')
 
 
 var methods = require('./utils/methods')
@@ -16,12 +20,15 @@ const port = 3000;
 
 // console.log(http)
 const server = http.createServer((request,response) => {
-  methods(request,response);
-  
-  response.write('content:')
-  response.end('hello nodejs')
+  // methods(request,response);
+
+  // response.write('content:')
+  // response.end('hello nodejs')
   
 });
+
+// dealSoket()
+// console.log(server)
 
 server.listen(port,() => {
   // console.log(mod)
@@ -29,7 +36,15 @@ server.listen(port,() => {
   // dealFile()
   // dealBuffer()
   // dealStream()
+  
+  // dealUrl()
+  // dealZlib()
 
-  dealUrl()
+  dealProcess()
   console.log(`running on ${port}...`)
 })
+
+/**
+ * 
+ */
+

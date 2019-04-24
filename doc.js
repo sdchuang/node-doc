@@ -1,6 +1,8 @@
+import { Socket } from "dgram";
 
 // Node概览
-
+2009.05/Ryan Dahl
+2011.07 window
 
 /**
  * npm
@@ -109,14 +111,76 @@ option={key:'',cert:''}
 http.createServer(options,(request, response)=>{}).listen(port,cb)
 
 // url
-
+.parse(url)
+// 为URL或 href 插入 或 替换原有的标签
+resolve(from, to)
+// 
+format(url,options)
+new URL(input[, base])
+// 
+URLSearchParams
+domainToASCII(domain)
+domainToUnicode(domain)
 // querystring
+querystring.parse('foo=bar&baz=qux&baz=quux&corge')
+querystring.stringify({ foo: 'bar', baz: ['qux', 'quux'], corge: '' });
 
+// websoket
+// ws
+// http://www.ruanyifeng.com/blog/2017/05/websocket.html
+// server
+var wss = new WebSocket.Server({//实例化
+  port:'',
+  host:''
+});
+wss.on('connection error headers',(ws)=>{
+  ws.on('message/close/error',cb)
+})
+// client
+var ws = new WebSocket('ws://localhost:3000');
+// readyState 0正在连接 1成功 2正在关闭 3失败或关闭
+ws.onopen/onmessage/onclose/onerror
 
+// socket.io
 
 /**
  * process
+ * https://juejin.im/post/5b0e97bef265da0914072515
  */
+// process
+// process.memoryUsage()  查看内存使用信息
+// process.platform()  系统平台
+// process.chdir() chdir方法用于修改Node.js应用程序中使用的当前工作目录
+// process.cwd() 进程当前工作目录
+// process.kill(pid) 杀死进程
+// process.exit(0);
+// process.uptime()    返回当前程序的运行时间
+
+process.on('eventName', () => {})//来监听事件。
+// 进程状态 比如：beforeExit(asyn)、exit、uncaughtException、message
+// 信号事件 比如：SIGTERM(优雅关闭)、SIGKILL、SIGUSR1
+
+// child_process
+// 创建子进程
+// 异步方式：spawn、exec、execFile、fork
+// 同步方式：spawnSync、execSync、execFileSync
+// 监听
+// close、exit、error、message
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
