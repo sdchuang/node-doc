@@ -22,7 +22,6 @@ const port = 3000;
 
 // console.log(http)
 const server = http.createServer((request,response) => {
-  console.log(response.writeJson({code:0}))
   methods(request,response);
 
   // response.write('content:')
@@ -45,7 +44,7 @@ server.listen(port,() => {
 
   // dealProcess()
 
-  eventLoop()
+  // eventLoop()
   console.log(`running on ${port}...`)
 })
 

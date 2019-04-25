@@ -7,10 +7,11 @@ import { Socket } from "dgram";
 /**
  * npm
  */
-
 init/install/uninstall/list/update/version
 $ npm install -g cnpm --registry='https://registry.npm.taobao.org'  (10min) 
-npm install/npm install --save(-S)/npm install --save-dev(-D)
+npm install 
+npm install --save(-S)
+npm install --save-dev(-D)
 
 /**
  * file
@@ -183,7 +184,13 @@ process.on('eventName', () => {})//来监听事件。
 
 
 
+ 
 
+
+/**
+ * 框架
+ * koa2
+ */
 
 
 
