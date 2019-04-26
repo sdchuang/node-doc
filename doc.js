@@ -203,6 +203,7 @@ pm2 start app.js -i max // 根据机器CPU核数，开启对应数目的进程
 /**
  * 框架
  * koa2
+ * https://koa.bootcss.com/#application
  * app ctx req res
  */
 node > 7.6
@@ -210,9 +211,12 @@ node > 7.6
 
 /**
  * express
+ * http://www.expressjs.com.cn/starter/generator.html
  * app res,req,router
  */
 
+npm install express-generator -g
+express --view=ejs myapp
 
 
 
