@@ -9,14 +9,14 @@ var obj = {
 }
 
 // 
-function func(){
-  console.log('略略略...')
+function func(a){
+  console.log('略略略...',a)
 }
 
-// exports.a = obj;
+// exports.ab = obj;
 // module.exports = a;
-// module.exports = {
-//   a,
-//   obj,
-//   func
-// }
+module.exports = {
+  a,
+  obj,
+  func
+}

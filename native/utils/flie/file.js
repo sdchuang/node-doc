@@ -3,7 +3,7 @@ const fs = require('fs')
 
 //file 
 var path = './file/test';
-var writeData = 'Hello Node.js...';
+var writeData = 'Hello Node.js..///.';
 function dealFile(){
   // write
   fs.writeFile(path, writeData, err => {

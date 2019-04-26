@@ -183,13 +183,34 @@ process.on('eventName', () => {})//来监听事件。
 // close callbacks: 例如socket.on('close', ...)这种close事件的回调。
 
 
+/**
+ * pm2
+ */
+pm2 start file//启动
+pm2 restart id//重启
+pm2 stop app_name|app_id//停止 all
+pm2 list
+pm2 show id
+pm2 monit//监控CPU和内存的使用情况，同时应用的报错信息也会打印在Global Logs窗口中
+pm2 start file --watch//监听代码保存，并更新应
+pm2 init//创建一个ecosystem.config.js文件
+pm2 log//日志
+pm2 logs name --format/json//格式化日志    --line num   近几行日志
 
- 
-
+pm2 start app.js -i 3 // 开启三个进程
+pm2 start app.js -i max // 根据机器CPU核数，开启对应数目的进程
 
 /**
  * 框架
  * koa2
+ * app ctx req res
+ */
+node > 7.6
+
+
+/**
+ * express
+ * app res,req,router
  */
 
 

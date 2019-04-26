@@ -1,18 +1,19 @@
 {
-  "name": "native",
+  "name": "koa",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js",
-    "dev": "nodemon index.js"
+    "exp": "nodemon ./express/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "socket.io": "^2.2.0",
-    "ws": "^6.2.1"
+    "koa": "^2.7.0"
   }
 }

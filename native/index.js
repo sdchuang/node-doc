@@ -33,11 +33,11 @@ const server = http.createServer((request,response) => {
 // console.log(server)
 
 server.listen(port,() => {
-  // console.log(mod)
+  // console.log(mod.func(1))
   // dealPath()
   // dealFile()
   // dealBuffer()
-  // dealStream()
+  dealStream()
   
   // dealUrl()
   // dealZlib()
