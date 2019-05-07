@@ -13,6 +13,8 @@ var dealSoket = require('./utils/net/websoket')
 var dealProcess = require('./utils/process/process')
 // 
 var eventLoop = require('./utils/eventLoop')
+// 
+var lodash = require('./utils/lodash')
 
 
 var methods = require('./utils/methods')
@@ -22,7 +24,7 @@ const port = 3000;
 
 // console.log(http)
 const server = http.createServer((request,response) => {
-  methods(request,response);
+  // methods(request,response);
 
   // response.write('content:')
   // response.end('hello nodejs')
@@ -37,7 +39,7 @@ server.listen(port,() => {
   // dealPath()
   // dealFile()
   // dealBuffer()
-  dealStream()
+  // dealStream()
   
   // dealUrl()
   // dealZlib()
@@ -45,6 +47,8 @@ server.listen(port,() => {
   // dealProcess()
 
   // eventLoop()
+  
+  lodash()
   console.log(`running on ${port}...`)
 })
 

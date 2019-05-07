@@ -220,6 +220,24 @@ express --view=ejs myapp
 
 
 
+/**
+ * 调试
+ * 
+ */
+// chrome devtools
+chrome://inspect
+node --inspect file
+http://127.0.0.1:9229/json/list
+devtoolsFrontendUrl
+
+// vscode
+
+// debug
+node debug file
+https://nodejs.org/dist/latest-v7.x/docs/api/debugger.html
+
+
+
 
 
 
