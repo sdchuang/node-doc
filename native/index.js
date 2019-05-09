@@ -24,7 +24,7 @@ const port = 3000;
 
 // console.log(http)
 const server = http.createServer((request,response) => {
-  // methods(request,response);
+  methods(request,response);
 
   // response.write('content:')
   // response.end('hello nodejs')
@@ -48,7 +48,7 @@ server.listen(port,() => {
 
   // eventLoop()
   
-  lodash()
+  // lodash()
   console.log(`running on ${port}...`)
 })
 

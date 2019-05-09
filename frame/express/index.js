@@ -23,6 +23,7 @@ app.use(
   //   code:0,
   //   msg:'666'
   // })
+
   // res.json({
   //   code:0,
   //   msg:'6668'
@@ -47,12 +48,11 @@ app.use(
 //   })
 // })
 
-// app.use(route)
+app.use(route)
 
 // template
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-// app.use(express.static(path.join(__dirname, 'views')));
 
 app.get('/', function (req, res) {
   res.render('index', { title: 'Hey', content: 'Hello there!' })

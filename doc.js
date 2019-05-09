@@ -231,14 +231,20 @@ http://127.0.0.1:9229/json/list
 devtoolsFrontendUrl
 
 // vscode
+debugger
 
 // debug
 node debug file
 https://nodejs.org/dist/latest-v7.x/docs/api/debugger.html
+// 
+https://nodejs.org/zh-cn/docs/guides/debugging-getting-started/
+
+http://i5ting.github.io/node-debug-tutorial/#1
 
 
-
-
+/**
+ * https://nodejs.org/zh-cn/docs/guides/
+ */
 
 
 
